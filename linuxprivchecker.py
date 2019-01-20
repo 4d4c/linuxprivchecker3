@@ -181,7 +181,7 @@ printResults(getAppProc)  # comment to reduce output
 
 otherApps = {"SUDO": {"cmd": "sudo -V | grep version 2>/dev/null", "msg": "Sudo Version (Check out http://www.exploit-db.com/search/?action=search&filter_page=1&filter_description=sudo)", "results": results},
              "APACHE": {"cmd": "apache2 -v; apache2ctl -M; httpd -v; apachectl -l 2>/dev/null", "msg": "Apache Version and Modules", "results": results},
-             "APACHECONF": {"cmd": "cat /etc/apache2/apache2.conf 2>/dev/null", "msg": "Apache Config File", "results": results}
+             # "APACHECONF": {"cmd": "cat /etc/apache2/apache2.conf 2>/dev/null", "msg": "Apache Config File", "results": results}
              }
 
 otherApps = execCmd(otherApps)
